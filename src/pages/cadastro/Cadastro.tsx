@@ -1,7 +1,7 @@
 import { useState, useEffect, ChangeEvent, FormEvent } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Usuario from '../../models/Usuario'
-import { cadastrarUsuario } from '../../services/Service'
+import { cadastrar } from '../../services/Service'
 import './Cadastro.css'
 import { RotatingLines } from 'react-loader-spinner'
 
@@ -51,7 +51,7 @@ function Cadastro() {
       setIsLoading(true)
 
       try{
-        await cadastrarUsuario(`/usuarios/cadastrar`, usuario, setUsuario)
+        await cadastrar(`/usuarios/cadastrar`, usuario, setUsuario)
         alert('Usuário cadastrado com sucesso!')
       }catch(error){
         alert('Erro ao cadastrar o usuário!')
