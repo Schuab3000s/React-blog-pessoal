@@ -35,19 +35,15 @@ function Login() {
   return (
     <>
       <div className="grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center font-bold bg-[#F5F5DC]">
-        {" "}
-        {/* Fundo com Bege Claro */}
         <form
           className="flex justify-center items-center flex-col w-1/2 gap-4"
           onSubmit={login}
         >
           <h2 className="text-[#5D4037] text-5xl">Entrar</h2>{" "}
-          {/* Texto Marrom Escuro */}
           <div className="flex flex-col w-full">
             <label htmlFor="usuario" className="text-[#5D4037]">
               Usuário
-            </label>{" "}
-            {/* Texto Marrom Escuro */}
+            </label>
             <input
               type="text"
               id="usuario"
@@ -61,8 +57,7 @@ function Login() {
           <div className="flex flex-col w-full">
             <label htmlFor="senha" className="text-[#5D4037]">
               Senha
-            </label>{" "}
-            {/* Texto Marrom Escuro */}
+            </label>
             <input
               type="password"
               id="senha"
