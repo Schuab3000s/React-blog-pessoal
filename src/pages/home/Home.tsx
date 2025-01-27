@@ -19,7 +19,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center m-5 border-8">
             <img
               src="https://krioskcreata.com/media/service/Content.gif"
               alt="Imagem Página Home"
